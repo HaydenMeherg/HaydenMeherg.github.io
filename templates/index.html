@@ -1,0 +1,89 @@
+<!---Start-HTML--->
+<!DOCTYPE html>
+<html lang="en">
+<!---Start-Head--->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!--LINK-CSS---->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Press+Start+2P'>
+<link rel="stylesheet" href="css/main.css">
+<!---END-CSS---->
+
+<title>Hayden Luke Meherg</title>
+
+</head>
+<!---End-Head--->
+
+<!--Start-Body-->
+<body>
+<!---Start-Main--->
+    <main>
+        <div class="inner">
+            <p data-js="typing">Welcome to my site!</p>
+            <p data-js="typing">My name is Hayden Luke Meherg.</p>
+            <p data-js="typing">I'm 23 years old and live in the US.</p>
+            <p data-js="typing">I currently study software development at the University of Cincinnati.</p>
+            <p data-js="typing">Click on the right to learn more about me.</p>
+            <p data-js="typing">Thanks!</p>
+            <p class="cursor"></p>
+        </div>
+    </main>
+<!---End-Main--->
+
+<!---Start-scrollToSection--->
+    <div id="app">
+        <div class="sections-menu">
+            <a
+                href="javascript:void(0)"
+                class="menu-point"
+                v-bind:class="{active: activeSection == index}"
+                v-on:click="scrollToSection(index)"
+                v-for="(offset, index) in offsets"
+                v-bind:key="index">
+            </a>
+        </div>
+
+<!---Blue-section--->
+    <section class="fullpage blue">
+
+    </section>
+
+<!---Black-section--->
+    <section class="fullpage black">
+      <div>
+      <img src="img/fam.jpg">
+      <br><br>
+      </div>
+      <br><br>
+      <h1>This is my family.</h1>
+      <p>Myself, my loving mother, sister, dad, and brother. <a href="https://vuejs.org/" target="_blank"></a></p>
+    </section>
+
+<!---Red-section--->
+    <section class="fullpage red">
+      <div class="inner2">
+      <h1></h1>
+      <div>
+      <div class="p2">
+      <p data-js="typing">I've been programming for almost three years now. After changing majors, and wasting a year of college I decided to go into computer science. I've always been into technology and thought it would be a good fit. Another reason is I've played chess since I was eight years old. I believe the skills I learned mastering an analytical game built the foundation for why I enjoy programming. As far as development experience, I've designed multiple payed projects and am self-employed through UpWork. My strengths include, PHP, HTML, and CSS. I'm still in the process of mastering object oriented programming, but the three listed before are what I'm most confident in. I've also played video games passionatly my entire life. I frequently compete in games such as Fortnite, Call of Duty, and most recently "my favorite series ever" Gears 5. I'm open to a career in game development, but am hesitant as from what I've heard out of the industy. Overall I'm looking forward to a great semester this year!<p>
+      <div>
+    </section>
+    </div>
+<!---End-scrollToSection--->
+
+<!--Start-JavaScript-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
+  <script  src="js/index.js"></script>
+  <script  src="js/intro.js"></script>
+<!---End-JavaScript--->
+
+</body>
+<!--End-Body-->
+
+</html>
+<!---Start-HTML--->
